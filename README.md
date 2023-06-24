@@ -6,4 +6,4 @@ BANK CBA adalah sebuah program simulasi bank sederhana yang dibuat menggunakan b
 
 Secara default BANK CBA menggunakan PIN 'bankcba123' untuk mengganti PIN anda cukup mengetikkan angka '0' pada saat memasukkan PIN.
 
-Video: [fffg]()
+Video: [[fffg](https://youtu.be/XX2rUB6709A)](https://youtu.be/XX2rUB6709A)
