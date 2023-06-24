@@ -88,7 +88,7 @@ Jam: {now.strftime("%H:%M:%S")}\n
                     with open('data_saldo.json', 'r') as file:
                         data = json.load(file)
                 except FileNotFoundError:
-                    print(f"{m}[-] {p}Data saldo tidak ditemukan.{r}")
+                    print(f"\n{m}[-] {p}Data saldo tidak ditemukan.{r}")
                     continue
 
                 if jumlah_uang <= data['saldo_rp']:
@@ -111,7 +111,7 @@ Jam: {now.strftime("%H:%M:%S")}\n
                         clear_screen()
                         print(f"\n{h}[+] {p}Saldo Anda saat ini adalah RP.{int(saldo_rp)}{r}")
                 except FileNotFoundError:
-                    print(f"{m}[-] {p}Data saldo tidak ditemukan.{r}")
+                    print(f"\n{m}[-] {p}Data saldo tidak ditemukan.{r}")
 
             elif pilihan == '4':
                 break
