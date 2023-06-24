@@ -48,6 +48,7 @@ def check_pin():
 while True:
     if check_pin():
         while True:
+#            clearf_screen()
             now = datetime.now()
             print(f"""{b}
  ____    _    _   _ _  __   ____ ____    _
@@ -63,7 +64,7 @@ Jam: {now.strftime("%H:%M:%S")}\n
 [3]. Muat uang
 [4]. Keluar
 {r}""")
-            pilihan = input("\nPilih opsi (1/2/3/4): ")
+            pilihan = input("Pilih opsi (1/2/3/4): ")
 
             if pilihan == '1':
                 jumlah_uang = float(input("Masukkan jumlah uang yang ingin disimpan: "))
@@ -97,7 +98,7 @@ Jam: {now.strftime("%H:%M:%S")}\n
                         json.dump(data, file)
 
                     clear_screen()
-                    print(f"{h}[+] {p}Berhasil mengambil uang sebesar RP.{int(jumlah_uang)}{r}\n")
+                    print(f"\n{h}[+] {p}Berhasil mengambil uang sebesar RP.{int(jumlah_uang)}{r}")
                 else:
                     clear_screen()
                     print(f"\n{m}[-] {p}Saldo tidak mencukupi.{r}")
